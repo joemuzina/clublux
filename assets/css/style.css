@@ -10,6 +10,18 @@
     width: 100%;
 }
 
+.scroll-alpha {
+    background-color: none;
+    color: none;
+    transition: background-color 400ms linear;
+}
+
+.scroll-alpha.scrolled {
+    background-color: #007bff;
+    color: #007bff;
+    transition: background-color 400ms linear;
+}
+
 body{
     background-color: #e0e0e0;
 }
@@ -17,3 +29,184 @@ body{
 .main{
     background-color: #cacaca;
 }
+
+.splash-img {
+    filter: blur(5px) grayscale(10%);
+    -webkit-filter: blur(5px) grayscale(10%);
+    margin-bottom: -8px;
+    object-fit: cover;
+    object-position: 50% 0;
+    width: 100vw;
+    height: 110vh;
+}
+
+.splash-header {
+    color: #007bff;
+    font-size: 10vmin;
+    text-align: center;
+    text-shadow: 5px 5px 5px black;
+    left: 50%;
+}
+
+@media screen and (max-width:854px){
+    .splash-header {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width:324px){
+    .splash-header {
+        font-size: 38px;
+    }
+}
+
+.community-overview-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.community-overview {
+    width: 55%;
+    align-self: center;
+}
+
+.splash-text {
+    margin-top: 5px;
+    font-size:22px;
+    color: #f3f3f3;
+    text-align: left;
+    text-shadow: 7px 7px 7px black;
+    font-weight: bold;
+}
+
+@media screen and (min-width:847px) and (max-width:991px) {
+    .about-headings{
+        font-size:28px;
+    }
+    .splash-text{
+        font-size: 20px;
+    }
+    .about-text{
+        font-size:16px;
+    }
+}
+
+@media screen and (min-width:673px) and (max-width:845px) {
+    .bg-text > h1{
+        top: 25%;
+        font-size:25px;
+    }
+    .bg-text > h2{
+        font-size:16px;
+        top: 29%;
+    }
+    .bg-text >p{
+        font-size:12px;
+        top:36%;
+    }
+    .bg-image {
+        height:400px;
+    }
+    .about-headings{
+        font-size:26px;
+    }
+    .product-heading{
+        font-size:21px;
+    }
+    .splash-text{
+        font-size: 18px;
+    }
+    .about-text{
+        font-size:14px;
+    }
+}
+
+@media screen and (min-width:639px) and (max-width:672px) {
+    .bg-text > h1{
+        font-size:25px;
+        top:23%;
+    }
+    .bg-text > h2{
+        top:28%;
+        font-size:15px;
+    }
+    .bg-text >p{
+        font-size:11px;
+        top:36%;
+    }
+    .bg-image {
+        height:410px;
+    }
+    .about-headings{
+        font-size:24px;
+    }
+    .product-heading{
+        font-size:24px;
+    }
+    .splash-text{
+        font-size: 16px;
+    }
+    .about-text{
+        font-size:13px;
+    }
+}
+
+@media screen and (min-width:570px) and (max-width:638px) {
+    .bg-text > h1{
+        font-size:22px;
+        top:28%;
+    }
+    .bg-text > h2{
+        top:32%;
+        font-size:15px;
+    }
+    .bg-text >p{
+        font-size:11px;
+        top:39%;
+    }
+    .bg-image {
+        height:420px;
+    }
+    .about-headings{
+        font-size:20px;
+    }
+    .product-heading{
+        font-size:20px;
+    }
+    .splash-text{
+        font-size: 15px;
+    }
+    .about-text{
+        font-size:12px;
+    }
+}
+
+@media screen and (max-width:569px) {
+    .about-headings{
+        font-size:19px;
+    }
+    .product-heading{
+        font-size:17px;
+    }
+    .splash-text{
+        font-size: 15px;
+    }
+    .about-text{
+        font-size:12px;
+    }
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+  }
+  
+  @media screen and (max-width: 340px) {
+      .centered{
+         top: 60%; 
+      }
+  }
