@@ -120,22 +120,10 @@ body, html{
 
 .splash-header {
     color: #007bff;
-    font-size: 10vmin;
+    font-size: 6vw;
     text-align: center;
     text-shadow: 5px 5px 5px black;
     left: 50%;
-}
-
-@media screen and (max-width:854px){
-    .splash-header {
-        font-size: 45px;
-    }
-}
-
-@media screen and (max-width:324px){
-    .splash-header {
-        font-size: 38px;
-    }
 }
 
 .community-overview-container {
@@ -145,8 +133,9 @@ body, html{
 }
 
 .community-overview {
-    width: 55%;
+    width: 85%;
     align-self: center;
+    margin-top: 3%;
 }
 
 .splash-text {
@@ -238,7 +227,7 @@ body, html{
 
 .centered {
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80vw;
