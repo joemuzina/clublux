@@ -136,6 +136,8 @@ body, html{
     width: 85%;
     align-self: center;
     margin-top: 3%;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 .splash-text {
@@ -145,6 +147,7 @@ body, html{
     text-align: left;
     text-shadow: 7px 7px 7px black;
     font-weight: bold;
+    align-self: center;
 }
 
 @media screen and (min-width:847px) and (max-width:991px) {
