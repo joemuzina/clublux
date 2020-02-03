@@ -68,6 +68,21 @@ body, html{
     margin-top: 1%;
     border-bottom: 1px solid rgb(109, 109, 109);
     padding-bottom: 5px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.alt-details{
+    margin-top: 1%;
+    border-bottom: 1px solid rgb(109, 109, 109);
+    padding-bottom: 5px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}
+
+.alt-details h3{
+    align-self: center;
 }
 
 .bg {
@@ -104,9 +119,9 @@ body, html{
 .splash-text {
     margin-top: 5px;
     font-size:22px;
-    color: #f3f3f3;
+    color: #003063;
     text-align: left;
-    text-shadow: 7px 7px 7px black;
+    text-shadow: 1px 1px 1px #003063;
     font-weight: bold;
     align-self: center;
 }
@@ -197,9 +212,10 @@ body, html{
     width: 80vw;
   }
   
-  @media screen and (max-width: 340px) {
+  @media screen and (max-width: 360px) {
       .centered{
-         top: 60%; 
+         top: 55%; 
+         width: 100%;
       }
   }
 
@@ -435,6 +451,25 @@ body, html{
 
 .department-img img{
     width: 100%;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.department-carousel{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-self: center;
+    width: 60%;
+}
+
+@media screen and (max-width: 768px) {
+    .department-carousel{
+        width: 95%;
+    }
+}
+
+.department-carousel img{
     box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 8px;
 }
