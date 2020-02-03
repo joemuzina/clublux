@@ -106,9 +106,9 @@ body, html{
 .splash-text {
     margin-top: 5px;
     font-size:22px;
-    color: #f3f3f3;
+    color: #003063;
     text-align: left;
-    text-shadow: 7px 7px 7px black;
+    text-shadow: 1px 1px 1px #003063;
     font-weight: bold;
     align-self: center;
 }
