@@ -212,9 +212,10 @@ body, html{
     width: 80vw;
   }
   
-  @media screen and (max-width: 340px) {
+  @media screen and (max-width: 360px) {
       .centered{
-         top: 60%; 
+         top: 55%; 
+         width: 100%;
       }
   }
 
