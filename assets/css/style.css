@@ -448,13 +448,13 @@ body, html{
     display:flex;
     flex-flow:column nowrap;
     align-self: center;
+    justify-content: center;
 }
 
 .department-img img{
-    width: 100%;
     box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 8px;
-    max-width: 90%;
+    max-width: 95%;
     margin-top: 10px;
     height: auto;
     margin-left: auto;
