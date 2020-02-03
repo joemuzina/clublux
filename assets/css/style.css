@@ -72,6 +72,19 @@ body, html{
     flex-flow: row wrap;
 }
 
+.alt-details{
+    margin-top: 1%;
+    border-bottom: 1px solid rgb(109, 109, 109);
+    padding-bottom: 5px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}
+
+.alt-details h3{
+    align-self: center;
+}
+
 .bg {
     background-image: url("../images/big_blur.jpg");
     background-repeat: no-repeat;
@@ -437,6 +450,25 @@ body, html{
 
 .department-img img{
     width: 100%;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.department-carousel{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-self: center;
+    width: 60%;
+}
+
+@media screen and (max-width: 768px) {
+    .department-carousel{
+        width: 95%;
+    }
+}
+
+.department-carousel img{
     box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 8px;
 }
